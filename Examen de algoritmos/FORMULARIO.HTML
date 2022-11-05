@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <link src="javascript.js"></link> 
+    <link href="styleformulario.css" rel="stylesheet" type="text/css">  
+
+    <title>FORMULARIO</title>
+</head>
+
+    <body>
+
+        <form name="form1" action=""   id="form1">
+            <br><br>Ingrese su cargo, para conocer su salario <br><br>
+            <input type="text" id="nombre">
+            <label for="">Ingrese la Cantidad de Horas Extra</label>
+            <input type="number" name="hora" id="horaextra"><br><br>
+           <input type="button" value="SUPERVISOR" id="supervisor" onclick="formula1()">
+           <input type="button" value="SECRETARIA" id="secretaria" onclick="formula2()">
+           <input type="button" value="DIGITADOR" id="digitador" onclick="formula3()">
+           <input type="button" value="MENSAJERO" id="mensajero" onclick="formula4()">
+        </form>
+<script>
+    var hora=horaextra
+    var canthoraextra=(horaextra*18.5)
+    var tthoraextra=(horaextra+canthoraextra)
+    var bono=(250)
+    function formula1() {
+        var supervisor=(4250)
+        alert (nombre + ' Su salario es de: Q' + (supervisor+bono) )
+    }
+    function formula2() {
+        var secretaria=(3500)
+        alert (nombre + 'Su salario es de: Q' + (secretaria+ bono))
+    }
+    function formula3() {
+        var digitador=(3500)
+        alert (nombre + 'Su salario es de: Q' + (digitador+ bono))
+    }
+    function formula4() {
+        var mensajero=(3000)
+        alert (nombre + 'Su salario es de: Q' + (mensajero+ bono))
+    }
+    
+</script>
+
+</body>
+</html>
